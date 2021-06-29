@@ -33,7 +33,7 @@
 |  recall_score |  0.9499096307771753 |
 |  f1_score |  0.9690504411958383 |
 
-* SVM
+* SVM (SGD Classifier)
 
 | Metrics  |  Score | 
 | :------------: | :------------: |
