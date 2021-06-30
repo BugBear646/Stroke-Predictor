@@ -1,37 +1,80 @@
-## Welcome to GitHub Pages
+# Stroke Probability Prediction using Machine Learning
 
-You can use the [editor on GitHub](https://github.com/BugBear646/Stroke-Predictor/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+[![Python Versions](https://img.shields.io/pypi/pyversions/yt2mp3.svg)](https://pypi.python.org/pypi/yt2mp3/)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+**[Stroke Probability Calculator Web App](https://stroke-probability-calculator.herokuapp.com)**
 
-### Markdown
+The data for training the model was obtained from [here](https://www.kaggle.com/fedesoriano/stroke-prediction-dataset?select=healthcare-dataset-stroke-data.csv).
+According to the World Health Organization (WHO) stroke is the 2nd leading cause of death globally, responsible for approximately 11% of total deaths. Stroke is a blood clot   or bleeds in the brain, which can make permanent damage that has an effecton mobility, cognition, sight or communication. Stroke is considered as medical  urgent situation   and can cause long-term neurological damage, complications and often death. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+This web app is used to predict whether a patient is likely to get stroke based on the input parameters like gender, age, various diseases, and smoking status. Each row in the data provides relavant information about the patient.
 
-```markdown
-Syntax highlighted code block
+The web app was built in Python using the following libraries and deployed in Heroku environment.
+* streamlit
+* pandas
+* numpy
+* scikit-learn
+* pickle
+* Imbalanced Learn
 
-# Header 1
-## Header 2
-### Header 3
+### We Experimented Outputs with Different Models: ###
 
-- Bulleted
-- List
+* Random Forest Classifier
 
-1. Numbered
-2. List
+| Metrics  |  Score |
+| :------------: | :------------: |
+| accuracy_score  |  0.9706827825639707|  
+|  precision_score | 0.9896551724137931  |
+|  recall_score |  0.9517857142857142 |
+|  f1_score |  0.9703511053315995 |
 
-**Bold** and _Italic_ and `Code` text
+* Logistic Regression
 
-[Link](url) and ![Image](src)
-```
+| Metrics  |  Score |
+| :------------: | :------------: |
+| accuracy_score  |  0.7754918348977755| 
+|  precision_score | 0.7594272076372315  |
+|  recall_score |  0.811734693877551 |
+|  f1_score |  0.7847102342786684 |
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+* Adaboost Classifier
 
-### Jekyll Themes
+| Metrics  |  Score |
+| :------------: | :------------: |
+| accuracy_score  |  0.9709399511379709| 
+|  precision_score | 0.990701381509033  |
+|  recall_score |  0.9512755102040816 |
+|  f1_score |  0.9705882352941176 |
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/BugBear646/Stroke-Predictor/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+* SVM (SGD Classifier)
 
-### Support or Contact
+| Metrics  |  Score | 
+| :------------: | :------------: |
+| accuracy_score  |  0.770991384852771|
+|  precision_score | 0.7462583467649091  |
+|  recall_score |  0.8267857142857142 |
+|  f1_score |  0.7844608495703739 |
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+* Voting Classifier
+
+| Metrics  |  Score | 
+| :------------: | :------------: |
+| accuracy_score  |  0.9224636749389225|
+|  precision_score | 0.888134799906389  |
+|  recall_score |  0.9681122448979592 |
+|  f1_score |  0.9264005858659832 |
+
+* Neural Networks
+
+| Metrics  |  Score | 
+| :------------: | :------------: |
+| accuracy_score  |  0.9566670952809566|
+|  precision_score | 0.9396319018404908  |
+|  recall_score |  0.9767857142857143 |
+|  f1_score |  0.9578486554096309 |
+
+### Literature References ###
+* Artificial Neural Network Application to the Stroke Prediction. Available from: https://ieeexplore.ieee.org/document/9203638
+* Performance Analysis of Machine Learning Approaches in Stroke Prediction. Available from: https://ieeexplore.ieee.org/document/9297525
+
+
