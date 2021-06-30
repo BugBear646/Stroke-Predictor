@@ -2,6 +2,8 @@
 
 [![Python Versions](https://img.shields.io/pypi/pyversions/yt2mp3.svg)](https://pypi.python.org/pypi/yt2mp3/)
 
+**[Stroke Probability Calculator Web App](https://stroke-probability-calculator.herokuapp.com)**
+
 The data for training the model was obtained from [here](https://www.kaggle.com/fedesoriano/stroke-prediction-dataset?select=healthcare-dataset-stroke-data.csv).
 According to the World Health Organization (WHO) stroke is the 2nd leading cause of death globally, responsible for approximately 11% of total deaths. Stroke is a blood clot   or bleeds in the brain, which can make permanent damage that has an effecton mobility, cognition, sight or communication. Stroke is considered as medical  urgent situation   and can cause long-term neurological damage, complications and often death. 
 
