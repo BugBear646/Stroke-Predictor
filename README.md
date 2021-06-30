@@ -1,62 +1,76 @@
-# Stroke-Probability-Predictor
+# Stroke Probability Prediction using Machine Learning
 
 [![Python Versions](https://img.shields.io/pypi/pyversions/yt2mp3.svg)](https://pypi.python.org/pypi/yt2mp3/)
 
+The data for training the model was obtained from [here](https://www.kaggle.com/fedesoriano/stroke-prediction-dataset?select=healthcare-dataset-stroke-data.csv).
+According to the World Health Organization (WHO) stroke is the 2nd leading cause of death globally, responsible for approximately 11% of total deaths. Stroke is a blood clot   or bleeds in the brain, which can make permanent damage that has an effecton mobility, cognition, sight or communication. Stroke is considered as medical  urgent situation   and can cause long-term neurological damage, complications and often death. 
 
+This web app is used to predict whether a patient is likely to get stroke based on the input parameters like gender, age, various diseases, and smoking status. Each row in the data provides relavant information about the patient.
 
-### Experimented Outputs with Different Models:
+The web app was built in Python using the following libraries and deployed in Heroku environment.
+* streamlit
+* pandas
+* numpy
+* scikit-learn
+* pickle
+* Imbalanced Learn
+
+### We Experimented Outputs with Different Models: ###
 
 * Random Forest Classifier
 
 | Metrics  |  Score |
 | :------------: | :------------: |
-| accuracy_score  |  0.9691397711199692|  
-|  precision_score | 0.9894907033144705  |
-|  recall_score |  0.9481022463206816 |
-|  f1_score |  0.9683544303797468 |
+| accuracy_score  |  0.9706827825639707|  
+|  precision_score | 0.9896551724137931  |
+|  recall_score |  0.9517857142857142 |
+|  f1_score |  0.9703511053315995 |
 
 * Logistic Regression
 
 | Metrics  |  Score |
 | :------------: | :------------: |
-| accuracy_score  |  0.7694483734087695| 
-|  precision_score | 0.7560315115706548  |
-|  recall_score |  0.7929253808417248 |
-|  f1_score |  0.7740390674228104 |
+| accuracy_score  |  0.7754918348977755| 
+|  precision_score | 0.7594272076372315  |
+|  recall_score |  0.811734693877551 |
+|  f1_score |  0.7847102342786684 |
 
 * Adaboost Classifier
 
 | Metrics  |  Score |
 | :------------: | :------------: |
-| accuracy_score  |  0.9697826925549697| 
-|  precision_score | 0.988978494623656  |
-|  recall_score |  0.9499096307771753 |
-|  f1_score |  0.9690504411958383 |
+| accuracy_score  |  0.9709399511379709| 
+|  precision_score | 0.990701381509033  |
+|  recall_score |  0.9512755102040816 |
+|  f1_score |  0.9705882352941176 |
 
 * SVM (SGD Classifier)
 
 | Metrics  |  Score | 
 | :------------: | :------------: |
-| accuracy_score  |  0.7744631606017744|
-|  precision_score | 0.7507692307692307  |
-|  recall_score |  0.8190033565711334 |
-|  f1_score |  0.7834033094591256 |
+| accuracy_score  |  0.770991384852771|
+|  precision_score | 0.7462583467649091  |
+|  recall_score |  0.8267857142857142 |
+|  f1_score |  0.7844608495703739 |
 
 * Voting Classifier
 
 | Metrics  |  Score | 
 | :------------: | :------------: |
-| accuracy_score  |  0.9233637649479234|
-|  precision_score | 0.8913303080964892  |
-|  recall_score |  0.9635941130906274 |
-|  f1_score |  0.9260545905707196 |
+| accuracy_score  |  0.9224636749389225|
+|  precision_score | 0.888134799906389  |
+|  recall_score |  0.9681122448979592 |
+|  f1_score |  0.9264005858659832 |
 
 * Neural Networks
 
 | Metrics  |  Score | 
 | :------------: | :------------: |
-| accuracy_score  |  0.9507522180789507|
-|  precision_score | 0.9537181487259491  |
-|  recall_score |  0.9470694552026853 |
-|  f1_score |  0.9503821738567171 |
+| accuracy_score  |  0.9566670952809566|
+|  precision_score | 0.9396319018404908  |
+|  recall_score |  0.9767857142857143 |
+|  f1_score |  0.9578486554096309 |
 
+### Literature References ###
+* Artificial Neural Network Application to the Stroke Prediction. Available from: https://ieeexplore.ieee.org/document/9203638
+* Performance Analysis of Machine Learning Approaches in Stroke Prediction. Available from: https://ieeexplore.ieee.org/document/9297525
