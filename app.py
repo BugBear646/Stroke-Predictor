@@ -6,7 +6,9 @@ from sklearn.ensemble import RandomForestClassifier
 
 st.write("""
 # Stroke Prediction App
-This app predicts the probability of getting Stroke!
+According to the World Health Organization (WHO) stroke is the 2nd leading cause of death globally, responsible for approximately 11% of total deaths.
+This web app is used to predict whether you likely to get stroke based on the input parameters like gender, age, various diseases, and smoking status. You can find the entire source code for the models and web deployment [here](https://github.com/BugBear646/Stroke-Predictor/)
+Feel free to fork and contribute.😀 
 """)
 
 st.sidebar.header('User Input Features')
@@ -18,7 +20,7 @@ st.sidebar.markdown("""
 # Collects user input features into dataframe
 uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["csv"])
 if uploaded_file is not None:
-    input_df = pd.read_csv(uploaded_file)
+    df = pd.read_csv(uploaded_file)
 else:
     def user_input_features():
         gender = st.sidebar.selectbox('Gender',('Male','Female','Other'))
