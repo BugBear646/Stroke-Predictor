@@ -17,7 +17,7 @@ The web app was built in Python using the following libraries and deployed in He
 * pickle
 * Imbalanced Learn
 
-### We Experimented Outputs with Different Models: ###
+### Experimented Outputs with Different Models: ###
 
 * Random Forest Classifier
 
