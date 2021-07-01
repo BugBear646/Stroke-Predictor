@@ -1,4 +1,4 @@
-# Stroke Probability Prediction using Machine Learning
+# Stroke Prediction using Machine Learning
 
 [![Python Versions](https://img.shields.io/pypi/pyversions/yt2mp3.svg)](https://pypi.python.org/pypi/yt2mp3/)
 
