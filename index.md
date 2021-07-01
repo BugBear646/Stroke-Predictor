@@ -74,7 +74,7 @@ The web app was built in Python using the following libraries and deployed in He
 |  f1_score |  0.9578486554096309 |
 
 ### Literature References ###
-* Artificial Neural Network Application to the Stroke Prediction. Available from: https://ieeexplore.ieee.org/document/9203638
-* Performance Analysis of Machine Learning Approaches in Stroke Prediction. Available from: https://ieeexplore.ieee.org/document/9297525
+* Artificial Neural Network Application to the Stroke Prediction. [Link here](https://ieeexplore.ieee.org/document/9203638).
+* Performance Analysis of Machine Learning Approaches in Stroke Prediction. [Link here](https://ieeexplore.ieee.org/document/9297525).
 
 
